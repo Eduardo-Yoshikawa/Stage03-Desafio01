@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentoria</title>
+
+  <!--Link para página CSS-->
+  <link rel="stylesheet" href="style.css">
+
+  <!--Acesso às fontes do Google-->
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Staatliches&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="main-div">
+    <!--Início - Topo do navegador-->
+    <header>
+      <h1>Mentoria</h1>
+
+      <p>
+        Preencha o formulário abaixo para agendar a sua mentoria
+      </p>
+    </header>
+    <!--Fim - Topo do navegador-->
+
+    <!--Início - Formulário-->
+    <form id="form-one">
+      <div class="fieldset-block">
+        <fieldset>
+          <legend id="legend-one">Informações Pessoais</legend>
+
+          <!--Linha que fica abixo da legenda-->
+          <!--<div class="line"></div>-->
+
+          <div class="name">
+            <section class="input-block">
+              <label for="event-name">Nome</label>
+              <input type="text" id="event-name" required/>
+            </section>
+
+            <section class="input-block">
+              <label for="event-fname">Sobrenome</label>
+              <input type="text" id="evet-fname" required/>
+            </section>
+          </div>
+
+          <section class="input-block">
+            <label for="event-email">Email <span>(digite um email válido)</span></label>
+            <input type="email" id="event-email" />
+          </section>
+
+          <section class="input-block">
+            <label for="event-password">Senha <span>(mínimo de 6 caracteres)</span></label>
+            <input type="password" id="event-password" minlength="6" required/>
+          </section>
+        </fieldset>
+
+        <fieldset>
+          <legend id="legend-two">Informações do Mentor</legend>
+
+          <!--Linha que fica abixo da legenda-->
+          <div class="line"></div>
+
+          <section class="input-block">
+            <label for="event-mentorname">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+            <input type="text" id="event-mentorname" />
+          </section>
+
+        </fieldset>
+
+        <fieldset>
+          <legend id="legend-three">Seus horários disponíveis</legend>
+
+
+          <h3 id="h3-1">Primeira Mentoria</h3>
+          <div class="data-m">
+            <section class="input-block">
+              <label for="event-data1">Data <span>(dd/mm/aaaa)</span></label>
+              <input type="date" id="event-data1" />
+            </section>
+            <div class="time">
+              <section class="input-block period">
+                <label for="event-from">Das</label>
+                <input type="time" id="evet-from" />
+              </section>
+  
+              <section class="input-block period">
+                <label for="event-to">Até</label>
+                <input type="time" id="event-to" />
+              </section>
+            </div>
+          </div>
+
+          <h3 id="h3-2">Segunda Mentoria</h3>
+          <div class="data-m">
+            <section class="input-block last">
+              <label for="event-data2">Data <span>(dd/mm/aaaa)</span></label>
+              <input type="date" id="event-data2" />
+            </section>
+            <div class="time">
+              <section class="input-block period">
+                <label for="event-from">Das</label>
+                <input type="time" id="evet-from" />
+              </section>
+  
+              <section class="input-block period">
+                <label for="event-to">Até</label>
+                <input type="time" id="event-to" />
+              </section>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </form>
+
+    <!--Fim - Formulário-->
+
+    <!--Início - Footer-->
+    <footer>
+      <input class="save-button" type="submit" value="Salvar" form="form-one"/>
+    </footer>
+    <!--Fim - Footer-->
+
+  </div>
+
+</body>
+
+</html>
